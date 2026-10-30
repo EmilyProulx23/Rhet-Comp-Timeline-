@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing Studies Timeline</title>
+  <meta name="description" content="A searchable timeline of studies of the field of rhetoric and composition.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Studying the Field</h1>
+    <p class="subtitle">A searchable timeline of studies of rhetoric and composition</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Search and filter">
+      <label for="search" class="visually-hidden">Search the timeline</label>
+      <input id="search" type="search" placeholder="Search by author, title, journal, or year…" autocomplete="off">
+
+      <div class="decades" role="group" aria-label="Filter by decade" id="decade-filters"></div>
+
+      <p class="status" id="status" aria-live="polite"></p>
+    </section>
+
+    <ol class="timeline" id="timeline"></ol>
+  </main>
+
+  <footer class="site-footer">
+    <p>Data: <a href="writing_studies_timeline.json">writing_studies_timeline.json</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
